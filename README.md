@@ -7,20 +7,15 @@ This repository contains the implementation and analysis developed during my MSc
 ## Repository Structure
 
 ```
-Thesis/
 ├── ecmtool/                    # Extended fork of ecmtool (ECM computation engine)
 │   ├── ecmtool/                # Core Python package
 │   │   ├── conversion_cone.py  # ECM enumeration (indirect & dual methods)
-│   │   ├── helpers.py          # Utilities: MPI printing, redundancy, I/O
+│   │   ├── helpers.py          # Utilities: MPI, printing, redundancy, I/O
 │   │   ├── network.py          # SBML parsing, network compression
 │   │   ├── intersect_directly_mpi.py  # Direct MPI-parallel enumeration
 │   │   └── nullspace.py        # Nullspace computations
 │   ├── main.py                 # CLI entry point
 │   ├── ExampleUseECM.py        # Library usage example
-│   ├── models/                 # SBML metabolic network models (e.g. e_coli_core, iND750)
-│   ├── tests/                  # Pytest test suite
-│   ├── docker/                 # Dockerfile and Singularity definition
-│   ├── results_and_corresponding_runscripts/  # Pre-computed results + run scripts
 │   └── requirements.txt
 ├── efmtool_link/               # Python bridge to EFMtool (Java-based EFM enumerator)
 │   └── efmtool_link/
@@ -53,7 +48,6 @@ The repository includes a complete conda environment file that pins all dependen
 ```bash
 # Clone the repository
 git clone <your-repo-url>
-cd Thesis
 
 # Create the environment from the lockfile
 conda env create -f ecmtool3.9.yml
