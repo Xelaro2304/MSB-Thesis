@@ -1,4 +1,4 @@
-Duality-Based Framework for Minimal Cut Set Computation
+#Duality-Based Framework for Minimal Cut Set Computation
 
 This repository contains the implementation and analysis developed during my MSc thesis in Systems Biology and Bioinformatics. The project investigates the duality between **Minimal Cut Sets (MCSs)** and **Elementary Conversion Modes (ECMs)**, with the goal determining MCSs from dual ECMs. ECMs in this work were primarily determined using [ecmtool] (https://github.com/SystemsBioinformatics/ecmtool/tree/master)
 
